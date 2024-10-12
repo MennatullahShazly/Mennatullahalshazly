@@ -348,33 +348,30 @@ a:focus {
 .about_section {
   .row {
     align-items: center;
-    flex-direction: row; /* This keeps the image and text side-by-side on larger screens */
-
+    flex-direction: row;
+    
     @media (max-width: 768px) {
-      flex-direction: column; /* Stack image and text vertically on smaller screens */
+      flex-direction: column;
     }
   }
 
   .img-box {
-    img {
-      max-width: 100%;  /* Ensures the image scales with the container */
-      margin-bottom: 20px; /* Adds space between the image and the text */
-      
+    .rounded-video {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+
       @media (max-width: 768px) {
-        width: 80%;  /* Resize the image slightly smaller on mobile screens */
-        margin: 0 auto; /* Center the image */
+        width: 150px;
+        height: 150px;
       }
     }
   }
-
-  .detail-box {
-    text-align: center; /* Center-align the text on mobile */
-    
-    @media (max-width: 768px) {
-      text-align: left; /* Align text to the left for larger screens */
-    }
-  }
 }
+
 
 
 // end about section
