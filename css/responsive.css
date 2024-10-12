@@ -163,3 +163,36 @@
     height: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .about_section .row {
+    display: flex;
+    flex-direction: column-reverse; /* Ensure the text appears below the image */
+  }
+
+  .about_section .detail-box {
+    margin-top: 20px; /* Adds space between the image and the text */
+    text-align: center; /* Centers the text for a cleaner layout */
+    padding: 10px; /* Add padding to ensure no overlap */
+  }
+
+  .about_section .img-box {
+    margin-top: 0;
+    margin-bottom: 20px; /* Adds space between the image and the text */
+  }
+
+  .about_section img {
+    max-width: 100%; /* Ensures the image scales properly on mobile devices */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+
+  .hero_area {
+    height: auto; /* Ensure the hero section height is responsive */
+  }
+
+  .slider_section {
+    padding: 45px 0 200px 0; /* Adjust padding for proper content spacing */
+  }
+}
