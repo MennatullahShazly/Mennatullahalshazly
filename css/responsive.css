@@ -142,3 +142,24 @@
     max-width: 1170px;
   }
 }
+@media (max-width: 768px) {
+  .about_section .row {
+    display: flex;
+    flex-direction: column-reverse; /* Ensure the text appears below the image */
+  }
+
+  .about_section .detail-box {
+    margin-top: 20px; /* Adds space between the image and the text */
+    text-align: center; /* Centers the text for a cleaner layout */
+  }
+
+  .about_section .img-box {
+    margin-top: 0;
+    margin-bottom: 20px; /* Adds space between the image and the text */
+  }
+
+  .about_section img {
+    max-width: 100%; /* Ensures the image scales properly on mobile devices */
+    height: auto;
+  }
+}
