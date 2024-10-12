@@ -348,25 +348,34 @@ a:focus {
 .about_section {
   .row {
     align-items: center;
+    flex-direction: row; /* This keeps the image and text side-by-side on larger screens */
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+    }
   }
 
   .img-box {
     img {
-      max-width: 100%;
+      max-width: 100%;  /* Ensures the image scales with the container */
+      margin-bottom: 20px; /* Adds space between the image and the text */
+      
+      @media (max-width: 768px) {
+        width: 80%;  /* Resize the image slightly smaller on mobile screens */
+        margin: 0 auto; /* Center the image */
+      }
     }
   }
 
   .detail-box {
-    p {
-      margin-top: 25px;
-    }
-
-    a {
-      @include hero_btn($primary1, $white, 10px, 35px, 30px);
-      margin: 25px 0 45px 0;
+    text-align: center; /* Center-align the text on mobile */
+    
+    @media (max-width: 768px) {
+      text-align: left; /* Align text to the left for larger screens */
     }
   }
 }
+
 
 // end about section
 
