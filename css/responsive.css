@@ -142,25 +142,12 @@
     max-width: 1170px;
   }
 }
-@media (max-width: 768px) {
-  .about_section .row {
-    display: flex;
-    flex-direction: column-reverse; /* Ensure the text appears below the image */
-  }
-
-  .about_section .detail-box {
-    margin-top: 20px; /* Adds space between the image and the text */
-    text-align: center; /* Centers the text for a cleaner layout */
-  }
-
-  .about_section .img-box {
-    margin-top: 0;
-    margin-bottom: 20px; /* Adds space between the image and the text */
-  }
-
-  .about_section img {
-    max-width: 100%; /* Ensures the image scales properly on mobile devices */
+@media (min-width: 768px) {
+  .about_section .img-box img {
+    max-width: 60%; /* Limit the image size on desktop screens */
     height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -171,21 +158,21 @@
   }
 
   .about_section .detail-box {
-    margin-top: 20px; /* Adds space between the image and the text */
-    text-align: center; /* Centers the text for a cleaner layout */
-    padding: 10px; /* Add padding to ensure no overlap */
+    margin-top: 10px; /* Reduced space between the image and the text */
+    text-align: center;
+    padding: 5px; /* Reduced padding for tighter layout */
   }
 
   .about_section .img-box {
     margin-top: 0;
-    margin-bottom: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Reduced space between image and text */
   }
 
   .about_section img {
-    max-width: 100%; /* Ensures the image scales properly on mobile devices */
+    max-width: 90%; /* Adjust image size for mobile */
     height: auto;
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto;
   }
 
   .hero_area {
@@ -193,6 +180,6 @@
   }
 
   .slider_section {
-    padding: 45px 0 200px 0; /* Adjust padding for proper content spacing */
+    padding: 30px 0 100px 0; /* Adjusted padding to reduce large space */
   }
 }
