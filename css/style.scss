@@ -263,7 +263,8 @@ a:focus {
   }
 
   .detail_box {
-    color: $white;
+    align-self: flex-start;
+    color: $black;
 
     h1 {
       font-size: 4rem;
